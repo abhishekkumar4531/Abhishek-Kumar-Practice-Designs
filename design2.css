@@ -212,3 +212,9 @@ nav li:nth-child(5) sup{
     font-family: Arial, Helvetica, sans-serif;
     color: #1f065a;
 }
+.sms-logo{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    font-size: 50px;
+}

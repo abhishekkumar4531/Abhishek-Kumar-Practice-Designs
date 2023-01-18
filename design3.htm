@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thirdDesign</title>
+    <style type="text/css">
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container{
+            width: 1300px; 
+            margin: 0px auto;
+        }
+        .div-bg1{
+            background-color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .div1{
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            padding: 20px 15px;
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+        }
+        li{
+            list-style: none;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .ul2 a{
+            color: #1557e4;
+        }
+        .ul2 a span{
+            color: black;
+        }
+        .ul2 li:last-child span{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .img-1{
+            background-color: #1557e4;
+            padding: 2px 25px;
+        }
+        .banner{
+            background-image: url(Design-set1/Images/banner.jpg);
+            background-size: cover;
+        }
+        .img-2{
+            background-color: #1557e4;
+            color: white;
+            font-style: italic;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: larger;
+            width: 80px;
+            text-align: center;
+            padding: 10px;
+        }
+        .banner1{
+            position: relative;
+            height: 800px;
+        }
+        .banner-ctn{
+            width: 600px;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: translateY(-50%);
+        }
+        .banner-ctn h1{
+            font-size: 45px;
+            font-weight: lighter;
+            
+        }
+        .banner-ctn li{
+            margin: 30px 0px;
+            width: 100%;
+            border: 1px solid white;
+            box-sizing: border-box;
+        }
+        .banner-ctn a{
+            color: white;
+            width: 100%;
+            padding: 25px 0px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .shadow{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .banner-ctn a:hover{
+            background-color: #1557e4;
+        }
+        .div2{
+            background-color: white;
+            margin: 0px 10px;
+            padding: 5px 0px;
+            border-radius: 10px;
+        }
+        .div2 input{
+            padding: 20px 10px;
+            width: 400px;
+            border: none;
+        }
+        .div2 button{
+            padding: 12px 10px;
+            width: 120px;
+            background-color: #1557e4;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            border-color: #1557e4;
+            border-radius: 10px;
+        }
+        .div2 input::placeholder{
+            font-size: larger;
+            font-weight: bold;
+        }
+        .div-bg3{
+            background-color: #132857;
+        }
+        .div3{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0px;
+        }
+        .div3 a{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            font-weight: lighter;
+        }
+        .div31{
+            display: flex;
+            justify-content: space-between;
+        }
+        .div32 button{
+            padding: 20px 25px;
+            background-color: #1557e4;
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            border-color: #1557e4;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <div class="div-bg1">
+                <div class="container">
+                    <nav>
+                        <div class="div1">
+                            <div class="img-1">
+                                <img src="Design-set1/Icons/performance.png" alt="" width="50" height="55">
+                            </div>
+                            <ul>
+                                <li><a href="#">Buy</a></li>
+                                <li><a href="#">Rent</a></li>
+                                <li><a href="#">Sell</a></li>
+                                <li><a href="#">Mortgages</a></li>
+                                <li><a href="#">Agent finder</a></li>
+                                <li><a href="#">Advice</a></li>
+                                <li><a href="#">Home design</a></li>
+                                <li><a href="#">More</a></li>
+                            </ul>
+                        </div>
+                        <ul class="ul2">
+                            <li><a href="#">Advertise</a></li>
+                            <li><a href="#">Sign in <span>or</span> Join</a></li>
+                            <li><a href="#"><span>?</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="shadow">
+                    <div class="container">
+                        <div class="banner1">
+                            <div class="img-2">Zillow</div>
+                            <div class="banner-ctn">
+                                <h1>Find your way home</h1>
+                                <ul>
+                                    <li><a href="#">Buy</a></li>
+                                    <li><a href="#">Rent</a></li>
+                                    <li><a href="#">Sell</a></li>
+                                    <li><a href="#">Zestimate</a></li>
+                                </ul>
+                                <div class="div2">
+                                    <input type="text" placeholder="Enter an address, newighborhood, City or ZIP code"><button>Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <footer>
+        <div class="div-bg3">
+            <div class="container">
+                <div class="div3">
+                    <div class="div31">
+                        <img src="Design-set1/Icons/quality.png" alt="" width="55" height="55">
+                        <a href="#"><span style="font-weight: bold;">House obsessed?</span> watch our new show for the open house enthusiast</a>
+                    </div>
+                    <div class="div32">
+                        <button>Watch now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
