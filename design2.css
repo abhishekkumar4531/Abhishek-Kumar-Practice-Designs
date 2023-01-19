@@ -1,17 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.div-bg{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    border-bottom: 2px solid #1f065a;
+}
 nav{
     display: grid;
     background-color: white;
     grid-template-columns: 3fr 6fr 3fr;
     text-align: center;
-    border-bottom: 2px solid #1f065a;
-    position: sticky;
-    top: 0px;
+    
 }
 menu{
     text-align: left;
+    font-size: 35px;
+}
+.logo{
+    padding: 3px;
 }
 li{
     list-style: none;
+    width: 100%;
+}
+li:nth-child(3){
+    width: 80%;
+}
+li:first-child{
+    width: 120%;
 }
 a{
     text-decoration: none;
@@ -19,25 +39,43 @@ a{
 }
 ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 nav a{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    display: inline-block;
+    padding: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    
 }
-nav li:nth-child(3) sup{
+nav li a{
+    border-right: 1px solid #1f065a;
+}
+nav li:last-child a{
+    border: none;
+}
+nav a span:first-child{
+    font-size: 25px;
+}
+nav li:nth-child(2) sup{
     color: white;
     font-size: small;
     background-color: rgb(255, 81, 0);
-    padding: 5px;
-    border-radius: 10px;
+    padding: 3px 7px;
+    border-radius: 50%;
 }
-nav li:nth-child(5) sup{
+nav li a:hover{
+    background-color: #1f065a;
+    color: white;
+}
+nav li:nth-child(4) sup{
     color: white;
     font-size: small;
     background-color: rgb(255, 81, 0);
-    padding: 5px;
-    border-radius: 10px;
+    padding: 3px 7px;
+    border-radius: 50%;
 }
 .banner{
     background-image: url(Design-set1/PTOVBasetoBaseNewSnowEIP0145\ copy.png);
@@ -47,7 +85,7 @@ nav li:nth-child(5) sup{
 .div1{
     color: #1f065a;
     height: 100%;
-    font-size: 40px;
+    font-size: 45px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     display: flex;
@@ -58,6 +96,7 @@ nav li:nth-child(5) sup{
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px 100px;
     border-radius: 5px;
+    text-shadow: 3px 0px #1f065a;
 }
 .container{
     width: 1250px;
@@ -73,6 +112,7 @@ nav li:nth-child(5) sup{
 .div2 a{
     color: #1f065a;
     font-size: larger;
+    text-shadow: 1px 0px #1f065a;
 }
 .container1{
     width: 1500px;
@@ -85,13 +125,22 @@ nav li:nth-child(5) sup{
 .shadow{
     background-color: rgba(85, 85, 85, 0.8);
 }
+.div3 h2{
+    text-shadow: 1px 0px white;
+    font-size: 35px;
+}
+.div3 p{
+    text-shadow: 1px 0px white;
+    margin: 5px 0px;
+}
 .div3{
     display: flex;
     font-size: larger;
     justify-content: space-between;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 30px;
+    padding: 30px 50px;
+   
 }
 .input-design input,button{
     border-top-left-radius: 20px;
@@ -101,17 +150,27 @@ nav li:nth-child(5) sup{
     font-family: Arial, Helvetica, sans-serif;
 }
 .input-design input{
-    width: 300px;
+    width: 400px;
 }
 .input-design input::placeholder, button{
     font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .input-design button{
     background-color: rgb(255, 81, 0);
     position: relative;
     color: white;
     border-radius: 20px;
+    padding: 14px 20px;
     left: -20px;
+    cursor: pointer;
+}
+.input-design button:hover{
+    background-color: #1f065a;
+}
+.input-design button:hover span{
+    background-color: rgb(255, 81, 0);
 }
 .input-design{
     margin: auto 0px;
@@ -215,6 +274,117 @@ nav li:nth-child(5) sup{
 .sms-logo{
     position: fixed;
     right: 30px;
-    bottom: 50px;
+    bottom: 100px;
     font-size: 50px;
+    background-color: #1f065a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+.div9{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.div91{
+    display: flex;
+    justify-content: space-between;
+}
+.card1{
+    padding: 20px;
+    border: 1px solid #1f065a;
+    width: 33%;
+    color: #1f065a;
+    cursor: pointer;
+}
+.card11 img{
+    width: 100%;
+}
+.card1 h2{
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.card1:nth-child(2){
+    border-left: none;
+    border-right: none;
+}
+.card1 p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+.div9 h2:first-child{
+    font-size: 45px;
+    text-align: center;
+    color: #1f065a;
+    margin: 30px 0px;
+    text-shadow: 3px 0px #1f065a;
+}
+.card1 button{
+    border-radius: 35px;
+    padding: 12px 40px;
+    background-color: white;
+    color: rgb(255, 81, 0);
+    border: 2px solid rgb(255, 81, 0);
+}
+.card1-btn{
+    position: relative;
+    left: 0px;
+}
+.card1:hover img{
+    opacity: 0.5;
+}
+.card1:hover .card11{
+    background-color: black;
+}
+.card1 span{
+    color: white;
+}
+.card1:hover span{
+    display: initial;
+    position: relative;
+    color: white;
+    left: 330px;
+    top: -30px;
+}
+.div10{
+    margin: 50px 0px;
+    border: 1px solid #1f065a;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div101{
+    background-color: #1f065a;
+    color: white;
+    padding: 13px 25px;
+    position: relative;
+    left: -60px;
+}
+.div102 input{
+    background-color: rgb(230, 229, 229);
+    padding: 15px;
+    border: none;
+    width: 300px;
+}
+.div103 button{
+    border-radius: 20px;
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+.div103 button:hover{
+    background-color: #1f065a;
+}
+.div103 button:hover span{
+    background-color: rgb(255, 81, 0);
+}
+.div103 button span{
+    background-color: #1f065a;
+    padding: 15px;
+    border-radius: 25px;
+    position: relative;
+    left: 22px;
 }
